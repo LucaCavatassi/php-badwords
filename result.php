@@ -21,6 +21,6 @@ $replacement = "***"
     <span> This is the full text <strong><?php echo $full_text ?></strong> and the length is <strong> <?php echo strlen($full_text)?></strong> </span>
 
     <h1> Full text with hidden word.</h1>
-    <span><?php echo str_replace($hidden, $replacement, $full_text)?></span>
+    <span><?php echo str_ireplace($hidden, $replacement, $full_text)?></span>
 </body>
 </html>
